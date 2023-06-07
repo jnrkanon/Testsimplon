@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Oswald:wght@300&display=swap');/*Importation des polices*/
+
+body {
+    padding: 0 2%;/*Marge*/
+    margin: 0;/*Suppression des marges exterieurs*/
+    font-family: 'Noto Sans JP', sans-serif;/*Application de la police noto sans jp et sans serif dans le corps du site*/
+}
+
+nav {/*Modification de notre barre de navigation*/
+    display: flex;/*flexbox pour aligner mes éléments*/
+    flex-wrap: wrap;/*Passer à la ligne lorsque les éléments ne rentrent pas dans la barre de navigation*/
+    justify-content: space-between;/*Mettre un espace entre notre div et notre liste*/
+    align-items: center;/*Aligner de maniere centré nos éléments à la  au niveau de notre barre de navigation*/
+    position: sticky;/*Posisionnement de notre barre de navigation*/
+    top: 0;
+    background-color: white;/*Couleur d'arriere plan de la barre de navigation*/
+}
+nav .profile {/*Modification de notre Div profil*/
+    display: flex;/*Aligner la photo de profil et le texte de niveau 1*/
+    align-items: center;/*Aligner de maniere centré notre texte à la photo */
+
+}
+nav .profile img {/*Modification de la photo de profile*/
+    width: 40px;/*Largeur*/
+    height: 40px;/*Hauteur*/
+    border-radius: 50%;/*Les bords*/
+}
+nav .profile h1 {/*Modification du texte de niveau 1 de notre Div*/
+    margin-left: 10px;/*Marge de gauche pour espacer le texte et notre photo*/
+    font-size: 15px;/*Taille*/
+}
+nav ul {/*Modification de notre liste*/
+    display: flex;/*Aligner les éléments de la liste*/
+    list-style-type: none;/*Suppression des points des éléments de la liste*/
+}
+nav ul li {/*Modification des éléments de notre liste ul*/
+    margin-left: 20px;/*Marge de gauche pour espacer les éléments*/
+    font-size: 15px;
+    cursor: pointer;/*Mettre un curseur en pointeur sur les éléments*/
+    border-bottom: 1px solid #fff;/*Bordure blanche sur les éléments*/
+    
+}
+#mainNav a {/* desactiver le trait bleu qui fait reference au lien mis dans "Curicculum Vitae" et "Mon Blog" et en leur donnant la couleur noir*/
+    text-decoration: none;
+    color: black;
+}    
+nav ul li:hover {/*Modification des éléments lorsque l'utilisateur va placer son curseur au déssus des éléments*/
+    border-bottom-color: #000;/*Modification de la couleur de la bordure en noir*/
+
+}
+
+.page-content {/*Stylisation de notre section*/
+    margin: 4%;/*Marge de notre section*/
+}
+.page-content header {/*Stylisation de notre hearder*/
+    margin-top: 5%;/*Marge à l'exterieur en haut pour séparer notre barre de nav et notre header */
+    max-width: 80%;/*Largeur maximale*/
+}
+.page-content header h1 {/*Titre de notre header*/
+    margin: 0;/*Suppression de marge*/
+    text-transform: uppercase;/*Texte en majuscule*/
+    font-family: 'oswald', sans-serif;/*Police oswald importé*/
+    font-size: 6vw;/*Agrandir la taille du texte*/
+}
+
+.page-content header P {/*Stylisation de la description de notre header*/
+    line-height: 30px;/*Agrandir l'espacement de texte*/
+    color: #818181/*Couleur du texte*/
+}
+.page-content header button {/*Stylisation de notre bouton*/
+    background-color: inherit;/*Modification de la couleur d'arriere plan*/
+    border: none;/*Supression de bordure*/
+    outline: none;/*Suppression de la couleur qui s'applique à la bordure du boutton quand on clic*/
+    padding: 0;/*Suppression de marge à coté du bouton afinde s'aligner correctement en bas des autres éléments*/
+    font-size: 15px;/*Taille du texte*/
+    font-weight: bold;/*Texte en gras en fonction de la police regular 400*/
+    border-bottom: 1px solid #ccc;/*Bordure en dessous de notre texte de couleur grise*/
+    padding-bottom: 5px;/*Décoller la bordure de notre texte*/
+    cursor: pointer;/*Curseur en pointeur lorsqu'on passe sur le boutton*/
+}
+#mainBouton a {
+    text-decoration: none;/*desactiver le trait bleu qui fait reference au lien mis dans le bouton "contactez moi"*/
+    color: black;/*Couleur noir*/
+}
+.page-content header button:hover{/*Modification du bouton lorsque l'utilisateur va placer son curseur sur le bouton*/
+    color: #ccc;/*Couleur du texte en gris*/
+    border-bottom-color: #000;/*Bordure en dessous du texte en noir*/
+}
+
+.page-content .presentation-image {/*Modification de notre section presentation image*/
+    margin-top: 2%;/*Espacer notre header de notre image de presentation*/
+}
+.page-content .presentation-image img {/*Modification de notre image de presentation*/
+    max-width: 100%;/*Largeur maximale à ne pas dépasser*/
+    height: auto;/*Hauteur*/
+}
+.page-content .projects-section {/*Modification de notre projets section*/
+    margin-top: 2%;/*Marge afin d'espacer notre imgage de présentation et notre projets section*/
+}
+.page-content .projects-section h1 {/*Modification de notre texte de niveau du projets section*/
+    font-family: 'oswald', sans-serif;/*Modification de la police d'écriture*/
+    text-transform: uppercase;/*Titre en majuscule*/
+    font-size: 3vw;/*Agrandir la taille du texte*/
+}
+.page-content .projects-section .projects {/*Modification de notre div projects*/
+    display: flex;/*Flexbox pour aligner nos éléments*/
+    flex-wrap: wrap;/*Pour passer à la ligne si nos élément ne rentrent pas*/
+}
+.page-content .projects-section .projects .project {/*Modification de tous les "project" qui se trouvent notre div projects*/
+    margin-right: 20px;/*Espacement à droite*/
+    max-width: 195px;/*Largeur maximale**/
+}
+.page-content .projects-section .projects .project h4 {/*Modification de tous les titre de niveau 4 de "project" qui se trouvent notre div projects*/
+    margin: 0;/*Suppression de chaque marge*/
+}
+.page-content .projects-section .projects .projects .description {
+    font-size: 10px;
+}
+.page-content .projects-section .projects .project .dates {
+    font-size: 13px;
+    color: rgb(145, 145, 145);
+}
+footer {
+    margin-top: 5%;/*Espassement de notre footer*/
+    display: flex;/*Aligner mes éléments*/
+    flex-wrap: wrap;/*Pour passer à la ligne si nos élément ne rentrent pas*/
+    justify-content: space-around;/*Espacement autour des éléments*/
+    background-color: #000;/*Couleur d'arriere plan*/
+    color: white;/*Couleur du texte*/
+    padding: 10px;/*Marge à l'interieur du footer*/
+}
+footer .colonne a {/*Liens bleu qui apparait dans notrecolonne*/
+    text-decoration: none;
+    color: white;
+    
+}
+footer .colonne p {/*Tous les paragraphes qui sont dans nos colonne p*/
+    font-size: 12px;/*Taille du texte*/
+    color: #ccc;
+    cursor: pointer;
+}
+
+footer .colonne p:hover {/*Lorsque l'utilisateur va passer son curseur sur notre paragraphe*/
+    color: #fff;
+}
+@media screen and (max-width: 700px) {/*Définition de style en fonction d'un écran de 700px*/
+    nav {/*Barre de navigation*/
+        justify-content: center;/*Centrer mes éléments dans la barre de nav*/
+    }
+    nav ul {/*Mes onglets*/
+        display: none;/*Masquer*/
+    }
+
+    .page-content header {
+        margin-top: 10%;/*Augmentation des marges à l'exterieur au format mobile de 10%*/
+        max-width: 100%;/*Largeur maximal*/
+    }
+
+    .page-content .projects-section {
+        margin-top: 15%;/*Augmentation de la marge*/
+    }
+    .page-content .projects-section h1 {
+        font-size: 1.5em;/*Agrandir la texte de sa taille initiale*/
+    }
+    .page-content .projects-section .projects .project {
+        margin: 0;
+        margin-bottom: 20px;/*Marge pour espacer chaque élémnt*/
+        max-width: 100%;/*Largeur maximale*/
+    }
+    footer {
+        justify-content: flex-start;/*Nos éléments vont commencer au début de notre footer*/
+    }
+    footer .column  {
+        width: 80%;/*Pour ne pas que nos colonnes s'allignent*/
+    }
+}

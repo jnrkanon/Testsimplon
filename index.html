@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewpport" content="widh=device-widh, initial-scale=1.0">
+        <title>Création de mon portfolio en HTML & CSS herbergé sur GITHUB</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <nav id="mainNav"><!--Barre de navigation-->
+            <div class="profile"><!--Premiere division qui contiendra ma photo de profile et mon nom-->
+                <img src="image/maPhoto.jpeg" alt="photo de profile">
+                <h1>Kanon Junior Zozoro</h1>
+            </div>
+            <ul><!--liste de mes onglets contenant des liens-->
+                <li><a href="downloads/cv kanon junior.pdf">Curriculum Vitae</a></li>
+                <li><a href="monBlog.html">Mon blog</a></li>   
+            </ul>
+        </nav>
+        <section class="page-content"><!--Création d'une section qui s'appelle page content qui contiendra notre header et notre immage d'illustration et nos projets-->
+            <header>
+                <h1>Salut, je suis un jeune etudiant en base de données.</h1><!--Titre de niveau 1 de notre header-->
+                <p><!--Description de notre header-->
+                    Je m'appelle Kanon Junior Zozoro, un passionné de la technologie et du codage. Depuis mon plus jeune âge, j'ai toujours été fasciné par le monde de l'informatique et de la programmation. La possibilité de créer des applications et des sites Web à partir de zéro m'a toujours enthousiasmé.
+                    Actuellement, je suis étudiant en base de données, une discipline qui me captive aussi.
+                    L'année dernière, j'ai obtenu ma licence en base de données avec succès, ce qui a été une étape importante dans mon parcours académique.
+                </p>
+                <button id="mainBouton"><a href="#Mes adresses">Contactez moi</a></button><!--Boutton contactatez moi qui me rédirigera au pieds de page-->
+            </header>
+            <section class="presentation-image"><!--Création d'une section presentation image qui contiendra notre image d'illustration-->
+                <img src="image/imageIllustration.jpeg" alt="une image d'illustration">
+            </section>
+
+            <section class="projects-section"><!--Création d'une section "projects section"-->
+                <h1>Projets réalisés</h1><!--Création d'un texte de niveau 1-->
+                <div class="projetcts"><!--Création d'une division qui contiendra des sous div de meme class-->
+                    <div class="projetct">
+                        <h4>Application web de gestion des acteurs d'un village</h4>
+                        <p class="description">Projet collectif tutoré universitaire qui consistait à créer une base de données des maladies,des centres de santés, et l'application web</p>
+                        <p class="dates">Dates 2021 - 2022</p>
+                    </div>
+                    <div class="projetct">
+                        <h4>Certification en Office Word 2016</h4>
+                        <p class="description">Création et édition de documents, Gestion de la mise en page, Automatisation des tâches.</p>
+                        <p class="dates">Dates 2021 - 2022</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <footer> 
+            
+            <div class="colonne"><!--Premiere div "Mes réseaux" qui possedera la meme colonne-->
+                <h3>Mes réseaux</h3>
+                <p>Facebook : <a href="https://www.facebook.com/kanonjuniorr">https:www.facebook.com/kanonjuniorr</a></p>
+                <p>LinkedIn : <a href="https://www.linkedin.com/in/junior-kanon-503300204">https://www.linkedin.com/in/junior-kanon-503300204</a></p>
+            </div>
+            <div class="colonne"><!--Deuxieme div "Colonne" qui possedera la meme colonne-->
+                <h3 id="Mes adresses">Mes adresses</h3>
+                <p>E-mail : <a href=" mailto: juniorkanon2000@gmail.com"> juniorkanon2000@gmail.com</a></p>
+                <p>Téléphone : <a href="tel:+2250595233808">+2250595233808</a></p>
+                <p></p>
+            </div>
+        </footer>
+
+    </body>
+</html>
